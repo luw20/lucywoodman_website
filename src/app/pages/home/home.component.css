@@ -1,0 +1,10 @@
+
+.home-background{
+    height: 100%;
+    display: flex;
+}
+
+.row{
+    height: 200px;
+    background:red;
+}

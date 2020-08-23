@@ -1,0 +1,27 @@
+
+.layout-box{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 100%;
+    background-color: #f18c8e;
+    height: 40px;
+}
+
+.navbar a{
+    font-family: 'Marvel', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    float: right;
+    color: white;
+    text-decoration: none;
+    padding: 18px 16px;
+}
+
+.page-content{
+    flex-grow: 1;
+    overflow-y: scroll;
+}
