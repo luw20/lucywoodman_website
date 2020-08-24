@@ -1,10 +1,36 @@
 
 .home-background{
-    height: 100%;
+    width: 100%;
     display: flex;
 }
 
 .row{
-    height: 200px;
-    background:red;
+    height: 755px;
+    width: 100%;
+    background-color: #568ea6;
+    position: relative;
+}
+
+.lucy{
+    width: 40%;
+    height: 100px;
+    font-family: 'DM Serif Text', serif;
+    font-size: 80px;
+    color: white;
+    float: center;
+    position: absolute;
+    top: 20%;
+    margin: 100px 0 0 100px;
+}
+
+.message{
+    width: 60%;
+    height: 100px;
+    font-family: 'DM Serif Text', serif;
+    font-size: 60px;
+    color: #f18c8e;
+    float: center;
+    position: absolute;
+    top: 30%;
+    margin: 100px 0 0 100px;
 }
