@@ -4,14 +4,14 @@
 
 <!--Navbar-->
 <div class = "navbar">
-    <a href="#home" class="hello">Hello</a>
+    <a href="#contact" class="contact">Contact</a>
     <a href="#experience" class="experience">Experience</a>
-    <a href="#projects" class="projects">Projects</a>
-    <a href="contact" class="contact">Contact</a>
+    <a href="#projects" class="projects" id="projects" routerLink='/projects'>Projects</a>
+    <a href="#home" class="hello">Hello</a>
 </div>
 
 <!--This is where the page content is injected-->
 <div class="page-content">
-  <router-outlet></router-outlet> <!--update route later-->
-</div>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
 </div>
