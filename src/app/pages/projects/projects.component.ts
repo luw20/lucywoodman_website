@@ -23,7 +23,6 @@ export class ProjectsComponent implements OnInit {
 
    alertFunction(){
      this.matDialog.open(ModalComponent, {
-       width: '300px'
      });
    }
 
