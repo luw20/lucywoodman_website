@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog} from '@angular/material/dialog';
-import { ModalComponent } from 'src/app/modal/modal.component';
 import { Injectable } from '@angular/core';
+import { ModalServiceService } from 'src/app/modal-service.service';
 
 @Component({
   selector: 'app-projects',
@@ -15,15 +15,20 @@ import { Injectable } from '@angular/core';
 
 export class ProjectsComponent implements OnInit {
 
-  constructor(public matDialog: MatDialog) { }
+  constructor(public matDialog: MatDialog, public dialogService: ModalServiceService) { 
+   
+  }
 
   ngOnInit(): void {
 
    }
 
    alertFunction(){
-     this.matDialog.open(ModalComponent, {
-     });
+    const options = {
+      title: 'Password Generator',
+      body: 'This is my password generator'
+    };
+     this.dialogService.open(options);
    }
 
    closeModal(){

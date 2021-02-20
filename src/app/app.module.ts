@@ -9,8 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ModalComponent } from './modal/modal.component'; 
+import { ModalComponent } from 'src/app/modal/modal.component'; 
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { ModalServiceService } from './modal-service.service';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,6 @@ import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
   bootstrap: [AppComponent],
   entryComponents: [ModalComponent],
-  providers: [{provide : MatDialogRef, useValue : {}}]
+  providers: [{provide : MatDialogRef, useValue : {}}, ModalServiceService]
 })
 export class AppModule { }
