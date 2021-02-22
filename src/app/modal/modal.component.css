@@ -5,5 +5,16 @@
 }
 
 .close{
+ 
+    float: right;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    padding: 0px 7px;
+    background-color: white;
+    color: #EBBBA6;
+}
 
+.close:hover{
+    cursor:pointer;
 }

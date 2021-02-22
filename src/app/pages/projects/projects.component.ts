@@ -23,10 +23,18 @@ export class ProjectsComponent implements OnInit {
 
    }
 
-   alertFunction(){
+   projectOneFunction(){
     const options = {
       title: 'Password Generator',
       body: 'This is my password generator'
+    };
+     this.dialogService.open(options);
+   }
+
+   projectTwoFunction(){
+    const options = {
+      title: 'Vigenere Cipher',
+      body: 'This is my Vigenere Cipher'
     };
      this.dialogService.open(options);
    }
