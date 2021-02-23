@@ -13,11 +13,11 @@ export class ModalComponent implements OnInit {
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: {
     title: string,
+    subheader: string,
     body: string
   }, public dialogRef: MatDialogRef<ModalComponent>) { }
 
   actionFunction() {
-    alert("You have logged out.");
     this.closeModal();
   }
 

@@ -26,7 +26,8 @@ export class ProjectsComponent implements OnInit {
    projectOneFunction(){
     const options = {
       title: 'Password Generator',
-      body: 'This is my password generator'
+      subheader: 'Technologies Used: Java, MySQL',
+      body: 'This Java application generates a secure password, encrypts it, and stores it on a MySQL database.'
     };
      this.dialogService.open(options);
    }
@@ -34,6 +35,7 @@ export class ProjectsComponent implements OnInit {
    projectTwoFunction(){
     const options = {
       title: 'Vigenere Cipher',
+      subheader: 'Le Vigenere',
       body: 'This is my Vigenere Cipher'
     };
      this.dialogService.open(options);

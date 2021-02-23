@@ -1,5 +1,5 @@
 
-.home-background{
+.background{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -27,11 +27,6 @@
     height: 100%
 }
 
-.palm-tree{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
 .right-content{
     flex-grow: 1;
     height: 100%;

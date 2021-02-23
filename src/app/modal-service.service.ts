@@ -16,6 +16,7 @@ export class ModalServiceService {
     this.dialogRef = this.dialog.open(ModalComponent, {    
          data: {
            title: options.title,
+           subheader: options.subheader,
            body: options.body
          }
     });
