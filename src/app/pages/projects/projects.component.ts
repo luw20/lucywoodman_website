@@ -35,8 +35,17 @@ export class ProjectsComponent implements OnInit {
    projectTwoFunction(){
     const options = {
       title: 'Vigenere Cipher',
-      subheader: 'Le Vigenere',
-      body: 'This is my Vigenere Cipher'
+      subheader: 'Technologies Used: Java',
+      body: 'Developed an encryption algorithm to emulate the Vigenere cipher in Java'
+    };
+     this.dialogService.open(options);
+   }
+
+   projectThreeFunction(){
+    const options = {
+      title: 'This Website',
+      subheader: 'Technologies Used: Angular, CSS, HTML, & Typescript',
+      body: 'Developed an encryption algorithm to emulate the Vigenere cipher in Java'
     };
      this.dialogService.open(options);
    }

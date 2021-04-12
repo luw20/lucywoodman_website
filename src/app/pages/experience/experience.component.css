@@ -51,10 +51,13 @@
     padding-bottom: 2%;
   }
 .message-container{
+    display: table;
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(20px, 3vw, 40px);
+    font-size: clamp(20px, 3vw, 15px);
+    color: white;
+    width: 50vw;
   }
 
- p{
-    color: white;
-}
+  ul li{
+      margin: 40px;
+  }

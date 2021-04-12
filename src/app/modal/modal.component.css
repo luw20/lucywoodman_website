@@ -12,9 +12,11 @@
     font-size: 25px;
     padding: 0px 7px;
     background-color: white;
-    color: #EBBBA6;
+    color: #f18c8e;
 }
 
 .close:hover{
     cursor:pointer;
+    background-color: #f18c8e;
+    color: white;
 }
