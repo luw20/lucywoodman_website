@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalComponent } from 'src/app/modal/modal.component'; 
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { ModalServiceService } from './modal-service.service';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ModalServiceService } from './modal-service.service';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSidenavModule
   ],
 
   bootstrap: [AppComponent],

@@ -53,9 +53,16 @@
 .message-container{
     display: table;
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(20px, 3vw, 15px);
+    font-size: clamp(15px, 3vw, 23px);
     color: white;
     width: 50vw;
+  }
+
+  /* Media query for mobile screens */
+  @media screen and (max-width: 992px) {
+    .message-container{
+      width: 70vw;
+    }
   }
 
   ul li{

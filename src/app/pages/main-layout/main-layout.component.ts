@@ -1,10 +1,12 @@
-import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-main-layout',
   templateUrl: './main-layout.component.html',
-  styleUrls: ['./main-layout.component.css']
+  styleUrls: ['./main-layout.component.css', ]
 })
+
+//Makes the footer sticky
 export class MainLayoutComponent implements OnInit {
   @ViewChild('sticky') menuElement: ElementRef;
   elementPosition: any;
@@ -31,7 +33,7 @@ export class MainLayoutComponent implements OnInit {
         this.sticky = false;
       }
     }
-
-
+  
   } 
+
 
