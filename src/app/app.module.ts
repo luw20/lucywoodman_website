@@ -12,7 +12,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalComponent } from 'src/app/modal/modal.component'; 
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { ModalServiceService } from './modal-service.service';
-import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { HamburgerMenuComponent } from 'src/app/hamburger-menu/hamburger-menu.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.componen
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDialogModule    
+    MatDialogModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
 
   bootstrap: [AppComponent],
