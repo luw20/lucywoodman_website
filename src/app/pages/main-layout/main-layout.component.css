@@ -26,14 +26,7 @@
 
     color: #EBBBA6;
 }
-mat-sidenav-container, mat-sidenav-content, mat-sidenav {
-    height: 100%;
-    background-color: black;
-}
-mat-sidenav {
-    width: 250px;
-    background-color: black;
-}
+
 main {
     padding: 10px;
 }

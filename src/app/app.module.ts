@@ -12,7 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalComponent } from 'src/app/modal/modal.component'; 
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { ModalServiceService } from './modal-service.service';
-import { MatSidenavModule } from '@angular/material/sidenav';
+import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +24,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     ContactComponent,
     ExperienceComponent,
     ModalComponent,
+    HamburgerMenuComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDialogModule,
-    MatSidenavModule
+    MatDialogModule    
   ],
 
   bootstrap: [AppComponent],
