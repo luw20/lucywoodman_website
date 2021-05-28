@@ -15,6 +15,8 @@ import { ModalServiceService } from './modal-service.service';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { HamburgerMenuComponent } from 'src/app/hamburger-menu/hamburger-menu.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     BrowserAnimationsModule,
     MatDialogModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule
   ],
 
   bootstrap: [AppComponent],

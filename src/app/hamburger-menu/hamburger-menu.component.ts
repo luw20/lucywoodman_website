@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hamburger-menu.component.css']
 })
 export class HamburgerMenuComponent implements OnInit {
+  
 
   constructor() { }
 
