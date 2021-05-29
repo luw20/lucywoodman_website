@@ -18,8 +18,8 @@ mat-sidenav {
     padding-top: 20px;
     width: 200px;
     border-right: none;
-    color: #568ea6;
-    text-align: center;
+    padding-right: 15px;
+    text-align:end;
     position: absolute;
     top: 0;
     left: 0;
@@ -28,13 +28,28 @@ mat-sidenav {
     margin-bottom: 0;
 }
 
-#nav-links li{
+#nav-links li {
     padding: 5px;
     padding-left: 15px;
     text-align: left;
-
 }
+
+#nav-links a{
+    text-decoration: none;
+    color: #568ea6;
+}
+
+#nav-links li:hover{
+    color: #f18c8e;
+}
+
 button{
     border: none;
     background: transparent;
+}
+
+.close{
+    color: #f18c8e;
+    font-size: 20px;
+    font-weight: bold;
 }
