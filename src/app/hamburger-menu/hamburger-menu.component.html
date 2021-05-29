@@ -1,6 +1,11 @@
 <mat-sidenav-container>
     <mat-sidenav appResponsiveSidenav #start [mode]="'side'">
-        Start content
+      <ul id ="nav-links">
+        <li>Hello</li>
+        <li>Projects</li>
+        <li>Experience</li>
+        <li> Contact</li>
+      </ul>
       <!--this is a place for us to add side-nav code-->
       
     </mat-sidenav>
@@ -8,7 +13,7 @@
       <!--in here all the content must reside. We will add a navigation header as well-->
       <mat-toolbar>
         <button mat-icon-button (click)="start.toggle()">
-          <mat-icon>menu</mat-icon>
+          <mat-icon [ngStyle]="{'color':'#EBBBA6'}">menu</mat-icon>
         </button>
       </mat-toolbar>
   

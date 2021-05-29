@@ -9,7 +9,7 @@
     /* row has to be tall enough
      for no white space 
      between it and the footer */
-    height: 911px;
+    height: calc(100vh - 70px);
     width: 100%;
     display: flex;
     flex-direction: row;

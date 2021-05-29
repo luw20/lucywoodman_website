@@ -36,3 +36,9 @@ main {
     overflow: hidden;
     z-index: 10;
   }
+
+  mat-toolbar {
+    background: #568ea6;
+    height: 100%;
+    color: white;
+}
