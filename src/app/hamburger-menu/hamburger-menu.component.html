@@ -6,11 +6,11 @@
         </button>
       
       <!-- Menu items/links-->  
-      <ul id ="nav-links">
+      <ul id ="nav-links" (click)="start.toggle()"> <!-- close menu after clicking one of the menu items-->
         <a href="#hello" class=hello><li>Hello</li></a>
-        <a href="#projects" class=projects><li>Projects</li></a>
-        <a href="#experience" class=experience><li>Experience</li></a>
-        <a href="#contact" class=contact><li>Contact</li></a>
+        <a href="#projects" class=projects id="projects" routerLink='/projects'><li>Projects</li></a>
+        <a href="#experience" class=experience id="experience" routerLink='/experience'><li>Experience</li></a>
+        <a href="#contact" class=contact id="contact" routerLink='/contact'><li>Contact</li></a>
       </ul>
     
       <!--this is a place for us to add side-nav code-->
