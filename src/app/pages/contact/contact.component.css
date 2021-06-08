@@ -13,13 +13,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
     background-color: #568ea6;
-}
-
-.left-content{
-    flex-grow: 1;
-    height: 100%;
 }
 
 .middle-content{
@@ -27,13 +23,8 @@
     height: 100%;
 }
 
-.right-content{
-    flex-grow: 1;
-    height: 100%;
-}
-
 .content-container{
-    margin-top: 5%;
+    margin-top: 30vh;
     height: 300px;
     display: flex;
     flex-direction: column;
