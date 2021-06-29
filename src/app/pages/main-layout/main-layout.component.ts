@@ -12,7 +12,7 @@ export class MainLayoutComponent implements OnInit {
   elementPosition: any;
 
 
-  sticky: boolean = false;
+  isSticky: boolean = false;
 
   constructor() { }
 
@@ -34,13 +34,14 @@ export class MainLayoutComponent implements OnInit {
     window.location.href = "https://github.com/luw20";
   }
 
+  //function for sticky header
   @HostListener('window:scroll', ['$event'])
     handleScroll(){
       const windowScroll = window.pageYOffset;
-      if(windowScroll >= this.elementPosition){
-        this.sticky = true;
+      if(windowScroll >= 125){
+        this.isSticky = true;
       } else {
-        this.sticky = false;
+        this.isSticky = false;
       }
     }
   
