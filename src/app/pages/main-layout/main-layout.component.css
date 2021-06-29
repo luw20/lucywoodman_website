@@ -37,3 +37,26 @@ main {
     z-index: 10;
   }
 
+   .social-icons{
+      display: flex;
+      height: 110px;
+      width: 100%;
+      flex-direction: column;
+      background: #568ea6;
+  }
+
+  .github-icon{
+      height: 20px;
+      width: 20px;
+      padding: 20px 60px;
+  }
+
+  .linkedin-icon{
+      height: 20px;
+      width: 20px;
+      padding: 20px 60px;
+  }  
+
+  img{
+      object-fit: cover;
+  } 

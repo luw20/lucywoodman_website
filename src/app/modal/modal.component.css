@@ -20,3 +20,11 @@
     background-color: #f18c8e;
     color: white;
 }
+
+  /* Media query for mobile screens */
+  @media screen and (max-width: 992px) {
+   .modal{
+       width: 200px;
+       height: 200px;
+   }
+  }

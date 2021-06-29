@@ -23,7 +23,7 @@
 }
 
 .job-container{
-    font-size: clamp(10px, 4vw, 40px);
+    font-size: clamp(15px, 4vw, 40px);
     line-height: 110%;
     overflow-wrap: inherit;
     font-family:'Ubuntu', sans-serif;
@@ -33,7 +33,7 @@
 
   .date{
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(15px, 3vw, 20px);
+    font-size: clamp(10px, 3vw, 20px);
     color: white;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -69,7 +69,7 @@
      }
 
      .greeting-container{
-       margin-top: 30%;
+       margin-top: 40%;
        margin-bottom: 5%;
      }
 

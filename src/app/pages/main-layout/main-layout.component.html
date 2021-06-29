@@ -26,13 +26,17 @@
   <a href="#projects" class="projects" id="projects" routerLink='/projects'>Projects</a>
   <a href="#home" class="hello">Hello</a>
 </div>
-
 <!-- Hamburger Menu-->
 <app-hamburger-menu></app-hamburger-menu>
 </div>
 
 <!--This is where the page content is injected-->
 <div class="page-content">
+ <div class = "social-icons">
+    <div class ="github-icon"><img src= "\assets\linkedInWhite.png"/>
+    </div>
+    <div class ="linkedin-icon"><img src="\assets\GitHub-Mark-Light-32px.png"/></div>
+  </div> 
 <router-outlet></router-outlet>
 <app-footer></app-footer>
 </div>

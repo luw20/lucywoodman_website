@@ -45,7 +45,7 @@ export class ProjectsComponent implements OnInit {
     const options = {
       title: 'This Website',
       subheader: 'Technologies Used: Angular, CSS, HTML, & Typescript',
-      body: 'Developed an encryption algorithm to emulate the Vigenere cipher in Java'
+      body: 'A responsive multi-page website to display personal projects. Have a look around!'
     };
      this.dialogService.open(options);
    }
