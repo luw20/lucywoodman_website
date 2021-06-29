@@ -38,7 +38,8 @@ export class MainLayoutComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
     handleScroll(){
       const windowScroll = window.pageYOffset;
-      if(windowScroll >= 125){
+      const navBar = document.getElementById("navbar");
+      if(windowScroll >= 80){
         this.isSticky = true;
       } else {
         this.isSticky = false;

@@ -37,7 +37,8 @@ main {
     z-index: 10;
   }
 
-   .social-icons-top{
+  /* This is neccssary for the sticky navbar to work */
+   .navbar-excess{
       display: flex;
       height: 120px;
       width: 100%;
@@ -46,6 +47,10 @@ main {
       padding-left: 60px;
   }
 
+  .social-media-icons{
+      display: flex;
+      flex-direction: row;
+  }
   .github-icon{
       height: 20px;
       width: 20px;
