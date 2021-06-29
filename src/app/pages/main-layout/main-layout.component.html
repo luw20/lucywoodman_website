@@ -10,6 +10,9 @@
     .navbar-content {
       display: none;
     }
+    .social-icons-top{
+      display: none;
+    }
   }
 
   @media (min-width: 767px) {
@@ -30,13 +33,21 @@
 <app-hamburger-menu></app-hamburger-menu>
 </div>
 
+<!--These are the social icons that appear at the top of the page-->
+<div class = "social-icons-top">
+  <div class ="linkedin-icon"><img src= "\assets\linkedInWhite.png" href="#linkedin" class="linkedin" (click)="redirectLinkedIn()"></div>
+  <div class ="github-icon"><img src="\assets\GitHub-Mark-Light-32px.png" href="#github" class="github" (click)="redirectGitHub()"/></div>
+</div> 
+
 <!--This is where the page content is injected-->
 <div class="page-content">
- <div class = "social-icons">
-    <div class ="github-icon"><img src= "\assets\linkedInWhite.png"/>
-    </div>
-    <div class ="linkedin-icon"><img src="\assets\GitHub-Mark-Light-32px.png"/></div>
-  </div> 
+
 <router-outlet></router-outlet>
+
+<!-- These are the social icons that appear at the bottom of the page-->
+<div class = "social-icons-top">
+  <div class ="linkedin-icon"><img src= "\assets\linkedInWhite.png" href="#linkedin" class="linkedin" (click)="redirectLinkedIn()"></div>
+  <div class ="github-icon"><img src="\assets\GitHub-Mark-Light-32px.png" href="#github" class="github" (click)="redirectGitHub()"/></div>
+</div> 
 <app-footer></app-footer>
 </div>

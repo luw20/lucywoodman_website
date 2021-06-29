@@ -24,6 +24,16 @@ export class MainLayoutComponent implements OnInit {
     this.elementPosition = this.menuElement.nativeElement.offsetTop;
   }
 
+   //Redirects you to my LinkedIn profile
+   redirectLinkedIn(){
+    window.location.href = "https://www.linkedin.com/in/lucy-woodman-3bb762129/";
+  }
+
+  //Redirects you to my GitHub profile
+  redirectGitHub(){
+    window.location.href = "https://github.com/luw20";
+  }
+
   @HostListener('window:scroll', ['$event'])
     handleScroll(){
       const windowScroll = window.pageYOffset;
