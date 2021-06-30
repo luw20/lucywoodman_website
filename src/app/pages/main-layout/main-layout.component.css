@@ -53,6 +53,7 @@ main {
 
   /*Change navbar color on scroll */
   .navbar-color-change{
+      transition: background-color 0.2s ease;
       background-color:#EBBBA6;
   }
   .social-media-icons{

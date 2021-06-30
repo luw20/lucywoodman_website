@@ -1,10 +1,11 @@
 mat-sidenav-container{
-    height: 25vh;
-    background-color:#568ea6;
+    height: 200px;
 }
 mat-toolbar {
     background: #568ea6;
-    color: white;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
 }
 
 mat-sidenav-content{
@@ -12,10 +13,8 @@ mat-sidenav-content{
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    height: 25%;
 }
 mat-sidenav {
-    padding-top: 20px;
     width: 200px;
     border-right: none;
     padding-right: 15px;
@@ -24,7 +23,6 @@ mat-sidenav {
     top: 0;
     left: 0;
     width: 50%;
-    z-index: 10;
     margin-bottom: 0;
 }
 
@@ -46,6 +44,7 @@ mat-sidenav {
 button{
     border: none;
     background: transparent;
+    padding-top: 20px;
 }
 
 .close{

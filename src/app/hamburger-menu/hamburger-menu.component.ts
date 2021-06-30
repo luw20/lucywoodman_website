@@ -13,4 +13,7 @@ export class HamburgerMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showMenuOnClick(): void{
+  
+  }
 }
