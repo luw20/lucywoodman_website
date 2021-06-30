@@ -1,4 +1,4 @@
-<mat-sidenav-container [hasBackdrop]="false">
+<mat-sidenav-container [hasBackdrop]="false"id=hamburger-content>
     <mat-sidenav appResponsiveSidenav #start [mode]="'over'">
       <!-- Close button-->
         <button type="button" class="close" aria-label="Close" (click)="start.close()">
@@ -13,17 +13,16 @@
         <a href="#experience" class=experience id="experience" routerLink='/experience'><li>Experience</li></a>
         <a href="#contact" class=contact id="contact" routerLink='/contact'><li>Contact</li></a>
       </ul>
-    
-      <!--this is a place for us to add side-nav code-->
 
     </mat-sidenav>
     <mat-sidenav-content>
       <!--in here all the content must reside. We will add a navigation header as well-->
-      <mat-toolbar>
-        <button mat-icon-button (click)="start.toggle()">
-          <mat-icon [ngStyle]="{'color':'#EBBBA6'}">menu</mat-icon>
-        </button>
-      </mat-toolbar>
-  
     </mat-sidenav-content>
   </mat-sidenav-container>
+  
+<!--Toolbar-->
+  <mat-toolbar>
+    <button mat-icon-button (click)="start.toggle()">
+      <mat-icon [ngStyle]="{'color':'#EBBBA6'}">menu</mat-icon>
+    </button>
+  </mat-toolbar>
