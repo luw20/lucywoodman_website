@@ -3,17 +3,17 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    height: 15%;
 }
 
 .row{
     /* row has to be tall enough
      for no white space 
      between it and the footer */
-    height: calc(100vh - 70px);
+    height: calc(100vh - 20px);
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     background-color: #568ea6;
 }
 
@@ -24,8 +24,8 @@
 
 .middle-content{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     flex-grow: 1;
     height: 100%;
 }
@@ -38,8 +38,8 @@
 .home-greeting-container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    height: 60%;
+    align-items: center;
+    margin-top: 15%;
 }
 
 .lucy-container{

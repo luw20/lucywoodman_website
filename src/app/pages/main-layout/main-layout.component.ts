@@ -13,6 +13,7 @@ export class MainLayoutComponent implements OnInit {
 
 
   isSticky: boolean = false;
+  changeColor: boolean = false;
 
   constructor() { }
 
@@ -41,8 +42,11 @@ export class MainLayoutComponent implements OnInit {
       const navBar = document.getElementById("navbar");
       if(windowScroll >= 80){
         this.isSticky = true;
+        //change navbar color on scroll
+        this.changeColor= true;
       } else {
         this.isSticky = false;
+        this.changeColor = false;
       }
     }
   

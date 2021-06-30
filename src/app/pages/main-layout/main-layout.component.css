@@ -9,7 +9,11 @@
 .navbar{
     width: 100%;
     background-color: #568ea6;
-    height: 60px;
+    height: 70px;
+}
+
+.navbar-content{
+    height: 100%;
 }
 
 .navbar a{
@@ -40,36 +44,44 @@ main {
   /* This is neccssary for the sticky navbar to work */
    .navbar-excess{
       display: flex;
-      height: 120px;
+      height: 10%;
       width: 100%;
       flex-direction: column;
       background: #568ea6;
       padding-left: 60px;
   }
 
+  /*Change navbar color on scroll */
+  .navbar-color-change{
+      background-color:#EBBBA6;
+  }
   .social-media-icons{
       display: flex;
       flex-direction: row;
+      padding-top: 25px;
+      height: 100%;
   }
   .github-icon{
-      height: 20px;
-      width: 20px;
-      padding: 20px;
+      height: 25px;
+      width: 25px;
+      padding-left: 25px;
+      display: flex;
   }
 
   .github-icon:hover{
       cursor:pointer;
   }
   .linkedin-icon{
-      height: 20px;
-      width: 20px;
-      padding: 20px;
+      height: 25px;
+      width: 25px;
+      padding-left: 60px;
   }  
 
   .linkedin-icon:hover{
     cursor:pointer;
   }
 
-  img{
+   img{
       object-fit: cover;
-  } 
+  }
+
