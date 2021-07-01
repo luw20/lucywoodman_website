@@ -14,30 +14,23 @@ mat-toolbar {
 mat-sidenav-content{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 80px;   
     height: 100%;
-    width: 250px;
-    font-size: 2rem;
-}
-mat-sidenav {
-    border-right: none;
-    padding-right: 15px;
-    text-align:end;
-    top: 0;
-    left: 0;
-    width: 250px;
-    margin-bottom: 0;
+    font-size: 2rem;    
 }
 
 #nav-links li {
     padding: 5px;
     padding-left: 15px;
     text-align: left;
+    list-style-type: none;
 }
 
 #nav-links a{
     text-decoration: none;
     color: #568ea6;
+    padding: 10px;
 }
 
 #nav-links li:hover{
@@ -48,10 +41,4 @@ button{
     border: none;
     background: transparent;
     padding-top: 20px;
-}
-
-.close{
-    color: #f18c8e;
-    font-size: 20px;
-    font-weight: bold;
 }

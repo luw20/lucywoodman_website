@@ -1,28 +1,21 @@
-<mat-sidenav-container [hasBackdrop]="false"id=hamburger-content>
-    <mat-sidenav appResponsiveSidenav #start [mode]="'over'">
-      <!-- Close button-->
-        <button type="button" class="close" aria-label="Close" (click)="start.close()">
-          <span aria-hidden="true">&times;</span>
-        </button>
+<mat-sidenav-container [hasBackdrop]="false"id=hamburger-container>
+  <!--Conent of the sidenav-->
+    <mat-sidenav-content>
       
-      <!-- Menu items/links-->  
-      <ul id ="nav-links" (click)="start.toggle()"> <!-- close menu after clicking one of the menu items-->
+      <!--Links-->
+      <ul id ="nav-links"> 
         <a href="#resume" class=resume><li>Resume</li></a>
         <a href="#hello" class=hello><li>Hello</li></a>
         <a href="#projects" class=projects id="projects" routerLink='/projects'><li>Projects</li></a>
         <a href="#experience" class=experience id="experience" routerLink='/experience'><li>Experience</li></a>
         <a href="#contact" class=contact id="contact" routerLink='/contact'><li>Contact</li></a>
       </ul>
-
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <!--in here all the content must reside. We will add a navigation header as well-->
     </mat-sidenav-content>
   </mat-sidenav-container>
   
 <!--Toolbar-->
   <mat-toolbar>
-    <button mat-icon-button (click)="start.toggle()">
+    <button #menubutton mat-icon-button (click)="showHideMenuOnClick(menubutton)">
       <mat-icon [ngStyle]="{'color':'#EBBBA6'}">menu</mat-icon>
     </button>
   </mat-toolbar>
