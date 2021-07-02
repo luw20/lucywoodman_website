@@ -54,7 +54,7 @@ main {
   /*Change navbar color on scroll */
   .navbar-color-change{
       transition: background-color 0.2s ease;
-      background-color:#EBBBA6;
+      background-color: #305f72;
   }
   .social-media-icons{
       display: flex;

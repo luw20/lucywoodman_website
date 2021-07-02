@@ -1,44 +1,25 @@
+  .home-background {
+    /*Needs to be long enough to not show white space
+    between it and footer */
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+   }
 
-@media screen and (min-width: 767px) {
-    
- 
-.home-background{
+   .row{
     width: 100%;
     display: flex;
-    flex-direction: columnn;
-}
+    flex-direction: row;
+    background-color: #568ea6;
+    flex-grow: 1;
+   }
 
-.row{
-    /* row has to be tall enough
-      for no white space 
-      between it and the footer */
-     height: 700px;
-     width: 100%;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: flex-start;
-     background-color: #568ea6;
- }
- 
-}
-
-@media screen and (max-width: 767px) {
-    .home-background {
-     width: 100%;
-      display: flex;
-      flex-direction: row;
-    }
-
-    .row{
-      height: 1100px;
-      width: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     background-color: #568ea6;
-    }
-  }
+   .content-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
 
 img{
    object-fit: cover;
@@ -106,3 +87,30 @@ img{
 img:hover{
     transform: scale(1.1);
  }
+
+ 
+ /* Mobile */
+@media screen and (min-width: 767px) {
+    
+ 
+    .home-background{
+        width: 100%;
+        display: flex;
+        flex-direction: columnn;
+    }
+    
+    .row{
+        /* row has to be tall enough
+          for no white space 
+          between it and the footer */
+         height: 700px;
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: flex-start;
+         background-color: #568ea6;
+     }
+     
+    }
+    
