@@ -2,17 +2,17 @@
 .home-background{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    height: 15%;
+    flex-direction: row;
 }
 
 .row{
-    /* row has to be tall enough
-     for no white space 
-     between it and the footer */
-    height: calc(100vh - 20px);
+    /* needs to be tall enough
+    for no white space 
+    between it and the footer */
+    min-height: calc(100vh - 20px);
     width: 100%;
     display: flex;
+    align-items: center;
     flex-direction: row;
     background-color: #568ea6;
 }
@@ -20,15 +20,12 @@
 .middle-content{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100%;
     width: 50%;
-    padding-left: 100px;
+    
 }
 .right-content{
+    display: flex;
     width: 50%;
-    height: 100%;
 }
 
 .lucy-container{
@@ -45,7 +42,7 @@
 
 .message-container{
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(15px, 4vw, 25px);
+    font-size: clamp(20px, 4vw, 25px);
     line-height: normal;
     margin-top: 5%;
   }
@@ -78,21 +75,27 @@
   }
 
 .lucy-image{
-    padding-top: 10%;
-    width: 70%;
-    height: 70%;
-    display: flex;
+    width: 50%;
+    height: 50%;
 }
 
 img{
-    object-fit: cover;
+    object-fit:cover;
+    width: 100%;
 }
 /* For mobile */
 @media only screen and (max-width: 767px) {
     
     .middle-content{
        padding-top: 20%;
+       padding-left: none;
     }
+
+    .right-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
 
    .row{
        flex-direction: column;
@@ -105,4 +108,20 @@ img{
    .message-container{
        padding-top: 10%;
    }
+
+   .lucy-image{
+    margin-top: 5%;
+    height: 80%;
+    width: 80%;
+    }
+
+    .button1{
+    margin-bottom: 10%;
+    }
+  }
+
+  @media only screen and (min-width: 767px) {
+    .middle-content{
+        padding-left: 100px;
+    }
   }
