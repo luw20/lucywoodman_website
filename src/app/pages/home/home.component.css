@@ -88,12 +88,12 @@ img{
     
     .middle-content{
        padding-top: 20%;
-       padding-left: none;
+       width: 80%;
     }
 
     .right-content{
         flex-direction: column;
-        align-items: center;
+        width: 80%;
     }
 
 

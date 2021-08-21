@@ -16,7 +16,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { HamburgerMenuComponent } from 'src/app/hamburger-menu/hamburger-menu.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-
+import { PdfJsViewerModule } from 'ng2-pdfjs-viewer';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatDialogModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    PdfJsViewerModule
   ],
 
   bootstrap: [AppComponent],
