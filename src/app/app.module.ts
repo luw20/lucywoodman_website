@@ -17,7 +17,6 @@ import { HamburgerMenuComponent } from 'src/app/hamburger-menu/hamburger-menu.co
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 
-
 @NgModule({
   declarations: [
     AppComponent,

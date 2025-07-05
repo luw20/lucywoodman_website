@@ -2,81 +2,63 @@
 .home-background{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .row{
-    /* row has to be tall enough
-     for no white space 
-     between it and the footer */
-    height: calc(100vh - 70px);
+    /* needs to be tall enough
+    for no white space 
+    between it and the footer */
+    min-height: calc(100vh - 20px);
     width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-direction: row;
     background-color: #568ea6;
-}
-
-.left-content{
-    flex-grow: 1;
-    height: 100%;
 }
 
 .middle-content{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-grow: 1;
-    height: 100%;
+    flex-direction: column;
+    width: 50%;
+    
 }
 .right-content{
-    flex-grow: 1;
-    height: 100%;
-    align-items:flex-end;
-}
-
-.home-greeting-container{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 60%;
+    width: 50%;
 }
 
 .lucy-container{
-    width: 100%;
-    font-size: clamp(50px, 11vw, 90px);
-    
+    font-size: clamp(35px, 11vw, 90px);
+    line-height: normal;
   }
 
 .lucy{
     width: 100%;
-    height: 100px;
     font-family:'Ubuntu', sans-serif;
     color: white;
+    
 }
 
 .message-container{
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(20px, 4vw, 35px);
+    font-size: clamp(20px, 4vw, 25px);
+    line-height: normal;
+    margin-top: 5%;
   }
 
   .software-engineer{
       color: white;
-      padding: 10px;
   }
 
   .sunny-orlando{
       color: white;
-      padding: 10px;
   }
   
-  .contact-button-container{
-      padding-top: 10%;
-      margin-left: 20%;
-  }
   .button1{
+      margin-top: 5%;
       padding: 20px 35px;
-      background-color: #C4C4C4;
+      background-color: #E1C0C0;
       color: #305f72;
       border: none;
       outline: none;
@@ -92,4 +74,56 @@
       background-color: #EBBBA6;
   }
 
+.lucy-image{
+    width: 50%;
+    height: 50%;
+}
 
+img{
+    object-fit:cover;
+    width: 100%;
+}
+/* For mobile */
+@media only screen and (max-width: 767px) {
+    
+    .middle-content{
+       padding-top: 20%;
+       width: 80%;
+    }
+
+    .right-content{
+        flex-direction: column;
+        width: 80%;
+    }
+
+
+   .row{
+       flex-direction: column;
+   }
+
+   .home-greeting-container{
+       padding-top: none;
+   }
+
+   .message-container{
+       padding-top: 10%;
+   }
+
+   .lucy-image{
+    margin-top: 5%;
+    height: 80%;
+    width: 80%;
+    }
+
+    .button1{
+    margin-bottom: 10%;
+    }
+  }
+
+  /* For regular size screens */
+  @media only screen and (min-width: 767px) {
+    .middle-content{
+        padding-left: 100px;
+        padding-right: 7%;
+    }
+  }

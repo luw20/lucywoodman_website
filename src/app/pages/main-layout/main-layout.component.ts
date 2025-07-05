@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild, ElementRef, HostListener} from '@angular/core';
+import {Component, OnInit, ViewChild, ViewChildren, ElementRef, HostListener, QueryList} from '@angular/core';
 
 @Component({
   selector: 'app-main-layout',
@@ -12,7 +12,8 @@ export class MainLayoutComponent implements OnInit {
   elementPosition: any;
 
 
-  sticky: boolean = false;
+  isSticky: boolean = false;
+  changeColor: boolean = false;
 
   constructor() { }
 
@@ -22,16 +23,38 @@ export class MainLayoutComponent implements OnInit {
 
   ngAfterViewInit(){
     this.elementPosition = this.menuElement.nativeElement.offsetTop;
+
   }
 
+   //Redirects you to my LinkedIn profile
+   redirectLinkedIn(){
+    window.location.href = "https://www.linkedin.com/in/lucy-woodman-3bb762129/";
+  }
+
+  //Redirects you to my GitHub profile
+  redirectGitHub(){
+    window.location.href = "https://github.com/luw20";
+  }
+
+  //function for fancy changes on scroll
   @HostListener('window:scroll', ['$event'])
     handleScroll(){
+      //sticky header
       const windowScroll = window.pageYOffset;
-      if(windowScroll >= this.elementPosition){
-        this.sticky = true;
+      const navBar = document.getElementById("navbar");
+
+      if(windowScroll >= 80){
+        this.isSticky = true;
+        
+        //change navbar color on scroll
+        this.changeColor= true;  
+
       } else {
-        this.sticky = false;
+        this.isSticky = false;
+        this.changeColor = false;
+        
       }
+
     }
   
   } 
