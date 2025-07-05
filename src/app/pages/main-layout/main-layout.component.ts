@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild, ElementRef, HostListener} from '@angular/core';
+import {Component, OnInit, ViewChild, ViewChildren, ElementRef, HostListener, QueryList} from '@angular/core';
 
 @Component({
   selector: 'app-main-layout',
@@ -23,6 +23,7 @@ export class MainLayoutComponent implements OnInit {
 
   ngAfterViewInit(){
     this.elementPosition = this.menuElement.nativeElement.offsetTop;
+
   }
 
    //Redirects you to my LinkedIn profile
@@ -35,19 +36,25 @@ export class MainLayoutComponent implements OnInit {
     window.location.href = "https://github.com/luw20";
   }
 
-  //function for sticky header
+  //function for fancy changes on scroll
   @HostListener('window:scroll', ['$event'])
     handleScroll(){
+      //sticky header
       const windowScroll = window.pageYOffset;
       const navBar = document.getElementById("navbar");
+
       if(windowScroll >= 80){
         this.isSticky = true;
+        
         //change navbar color on scroll
-        this.changeColor= true;
+        this.changeColor= true;  
+
       } else {
         this.isSticky = false;
         this.changeColor = false;
+        
       }
+
     }
   
   } 
