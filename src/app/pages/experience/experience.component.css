@@ -35,6 +35,7 @@
     overflow-wrap: inherit;
     font-family:'Ubuntu', sans-serif;
     color: white;
+    margin-top: 5%;
 
   }
 
@@ -64,6 +65,7 @@
      }
      .row{
        height: auto;
+       justify-content: center;
      }
 
      .job-container{

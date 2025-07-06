@@ -31,6 +31,23 @@
     color: #EBBBA6;
 }
 
+.nav-button{
+    background-color: #568ea6;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+   
+    cursor: pointer;
+}
+
+.nav-button:hover{
+    background-color: #E1C0C0;
+    color: #305f72;
+}
+
 main {
     padding: 10px;
 }
@@ -56,6 +73,8 @@ main {
       transition: background-color 0.2s ease;
       background-color: #305f72;
   }
+
+
   .social-media-icons{
       display: flex;
       flex-direction: row;
