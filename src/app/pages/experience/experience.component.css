@@ -10,7 +10,7 @@
    /* row has to be tall enough
      for no white space 
      between it and the footer */
-    height: 1300px;
+    min-height: 100vh;
     width: 100%;
     justify-content: center;
     background-color: #568ea6;
